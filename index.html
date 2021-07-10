@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap login</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            background: url(./images/1.jpg)
+        }
+
+    #container {
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.3);
+        position: relative;
+    }
+
+    #container::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgba(35, 106, 240, 0.6);
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #container::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background: url(./images/2.png)no-repeat center center/contain;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .text-grey {
+        color: rgb(90, 89, 89);
+    }
+
+    .background-white {
+        background: rgb(255, 255, 255);
+    }
+
+    .w-10 {
+        width: 10%;
+    }
+
+    .border-0 {
+        border: white;
+    }
+
+    .margin-1 {
+        margin-right: -10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div id="container" class="w-25 h-50 d-flex justify-content-center align-items-center">
+            <div class="w-75 h-75 d-flex flex-column justify-content-around align-items-center">
+                <div id="sign" class="text-grey"><h1>Sign In</h1></div>
+            <div id="name" class="w-100">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend  w-10 background-white d-flex justify-content-center align-items-center input-group-text border-0 margin-1">
+                        <img src="./images/3.png" alt=""  width="20px" height="20px">
+                    </div>
+                    <input type="text" class="form-control  border-0" placeholder="Username">
+                </div>
+            </div>
+            <div id="password"  class="w-100">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend  w-10 background-white d-flex justify-content-center align-items-center input-group-text border-0 margin-1">
+                        <img src="./images/4.png" alt=""  width="20px" height="20px">
+                    </div>
+                    <input type="text" class="form-control  border-0" placeholder="Password">
+                </div>
+            </div>
+            <div id="login" class="w-100">
+                <button type="button" class="btn btn-primary btn-lg w-100">Login</button>
+            </div>
+            <div id="footer" class="w-100 text-white">
+                    <input type="checkbox" class="mr-2">
+                    <span class="mr-5">Remember me</span>
+                    <span class="ml-5">Forgot Password?</span>
+                    
+                
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
